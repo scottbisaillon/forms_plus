@@ -1,4 +1,4 @@
-library form_inputs;
+library forms_plus;
 
 export 'src/converters/converter.dart';
 export 'src/converters/converters.dart';

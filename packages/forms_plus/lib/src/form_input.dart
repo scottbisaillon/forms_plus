@@ -1,7 +1,7 @@
 import 'package:equatable/equatable.dart';
-import 'package:form_inputs/src/converters/converter.dart';
-import 'package:form_inputs/src/utility.dart';
-import 'package:form_inputs/src/validators/validator.dart';
+import 'package:forms_plus/src/converters/converter.dart';
+import 'package:forms_plus/src/utility.dart';
+import 'package:forms_plus/src/validators/validator.dart';
 import 'package:meta/meta.dart';
 
 /// {@template form_input}

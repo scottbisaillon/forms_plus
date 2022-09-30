@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:form_inputs/src/form_input.dart';
-import 'package:form_inputs/src/validators/all_validators.dart';
-import 'package:form_inputs/src/validators/validator.dart';
+import 'package:forms_plus/src/form_input.dart';
+import 'package:forms_plus/src/validators/all_validators.dart';
+import 'package:forms_plus/src/validators/validator.dart';
 import 'package:test/test.dart';
 
 class TestFormInput extends BaseFormInput<String, String, ValidationError> {

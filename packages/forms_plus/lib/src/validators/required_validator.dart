@@ -1,4 +1,4 @@
-import 'package:form_inputs/src/validators/validator.dart';
+import 'package:forms_plus/src/validators/validator.dart';
 
 /// {@template required}
 /// [Validator] requiring the value to not be empty.

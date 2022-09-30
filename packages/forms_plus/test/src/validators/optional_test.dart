@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:form_inputs/src/validators/validators.dart';
+import 'package:forms_plus/src/validators/validators.dart';
 
 void main() {
   group('Optional', () {
