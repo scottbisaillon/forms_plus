@@ -1,4 +1,4 @@
-import 'package:form_inputs/src/validators/validator.dart';
+import 'package:forms_plus/src/validators/validator.dart';
 
 /// {@template hours_minutes_format_validator}
 /// [Validator] requiring the string input to be of the format HH:MM.

@@ -1,4 +1,4 @@
-import 'package:form_inputs/form_inputs.dart';
+import 'package:forms_plus/forms_plus.dart';
 
 /// {@template or}
 /// [Validator] requiring a least one of [validators] to evaluate to null.

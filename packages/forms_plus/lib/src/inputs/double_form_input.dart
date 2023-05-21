@@ -1,4 +1,4 @@
-import 'package:form_inputs/form_inputs.dart';
+import 'package:forms_plus/forms_plus.dart';
 
 /// An implementation of [FormInput] using a [String] as the input type and
 /// [double] as the output type.

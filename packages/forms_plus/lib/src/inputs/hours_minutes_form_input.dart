@@ -1,4 +1,4 @@
-import 'package:form_inputs/form_inputs.dart';
+import 'package:forms_plus/forms_plus.dart';
 
 /// {@template hours_minutes_form_input}
 /// A base implementation of [BaseFormInput] for text fields using the format

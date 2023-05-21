@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:form_inputs/src/form_input.dart';
-import 'package:form_inputs/src/sanitizers/sanitizers.dart';
-import 'package:form_inputs/src/validators/all_validators.dart';
-import 'package:form_inputs/src/validators/validator.dart';
-import 'package:test/test.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:forms_plus/src/form_input.dart';
+import 'package:forms_plus/src/sanitizers/sanitizers.dart';
+import 'package:forms_plus/src/validators/all_validators.dart';
+import 'package:forms_plus/src/validators/validator.dart';
 
 class TestFormInput extends BaseFormInput<String, String, ValidationError> {
   const TestFormInput.dirty([super.value = '']) : super.dirty();

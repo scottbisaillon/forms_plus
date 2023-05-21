@@ -1,4 +1,4 @@
-import 'package:form_inputs/src/converters/converter.dart';
+import 'package:forms_plus/src/converters/converter.dart';
 
 /// {@template string_converter}
 /// Converts a string => string.

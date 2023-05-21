@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:equatable/equatable.dart';
-import 'package:form_inputs/form_inputs.dart';
+import 'package:forms_plus/forms_plus.dart';
 import 'package:meta/meta.dart';
 
 /// {@template form}

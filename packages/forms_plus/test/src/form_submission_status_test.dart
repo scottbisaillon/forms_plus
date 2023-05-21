@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:form_inputs/src/form_submission_status.dart';
+import 'package:forms_plus/src/form_submission_status.dart';
 
 void main() {
   group('FormSubmissionStatusX', () {

@@ -1,4 +1,4 @@
-import 'package:form_inputs/src/validators/validator.dart';
+import 'package:forms_plus/src/validators/validator.dart';
 
 /// {@template double_validator}
 /// [Validator] requiring the value to be a valid double.

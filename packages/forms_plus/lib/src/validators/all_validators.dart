@@ -1,9 +1,9 @@
-import 'package:form_inputs/src/validators/double_validator.dart';
-import 'package:form_inputs/src/validators/fraction_validator.dart';
-import 'package:form_inputs/src/validators/hours_minutes_format_validator.dart';
-import 'package:form_inputs/src/validators/positive_validator.dart';
-import 'package:form_inputs/src/validators/required_validator.dart';
-import 'package:form_inputs/src/validators/url_validator.dart';
+import 'package:forms_plus/src/validators/double_validator.dart';
+import 'package:forms_plus/src/validators/fraction_validator.dart';
+import 'package:forms_plus/src/validators/hours_minutes_format_validator.dart';
+import 'package:forms_plus/src/validators/positive_validator.dart';
+import 'package:forms_plus/src/validators/required_validator.dart';
+import 'package:forms_plus/src/validators/url_validator.dart';
 
 /// Convenience class for accessing packaged default validators.
 abstract class Validators {
