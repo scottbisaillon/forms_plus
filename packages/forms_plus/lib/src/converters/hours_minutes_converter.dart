@@ -1,4 +1,4 @@
-import 'package:forms_plus/src/converters/converter.dart';
+import 'package:form_inputs/src/converters/converter.dart';
 
 /// {@template hours_minutes_converter}
 /// Converts a string of format HH:MM to a [Duration].

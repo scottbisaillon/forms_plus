@@ -1,4 +1,4 @@
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 /// {@template url_validator}
 /// [Validator] requiring the value to be of a URL format.

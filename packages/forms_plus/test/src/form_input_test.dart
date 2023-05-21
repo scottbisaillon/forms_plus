@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_const_constructors
-import 'package:forms_plus/src/form_input.dart';
-import 'package:forms_plus/src/validators/all_validators.dart';
-import 'package:forms_plus/src/validators/validator.dart';
+import 'package:form_inputs/src/form_input.dart';
+import 'package:form_inputs/src/sanitizers/sanitizers.dart';
+import 'package:form_inputs/src/validators/all_validators.dart';
+import 'package:form_inputs/src/validators/validator.dart';
 import 'package:test/test.dart';
 
 class TestFormInput extends BaseFormInput<String, String, ValidationError> {
@@ -10,6 +11,9 @@ class TestFormInput extends BaseFormInput<String, String, ValidationError> {
 
   @override
   String convert(String value) => value;
+
+  @override
+  Sanitizer<String> get sanitizer => Sanitizers.string;
 
   @override
   List<Validator<String, ValidationError>> get validators =>

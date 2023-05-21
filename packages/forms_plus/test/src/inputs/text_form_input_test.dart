@@ -1,18 +1,18 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 void main() {
   group('TextFormInput', () {
     group('constructors', () {
       group('pure', () {
         test("should create in 'pure' state with default value", () {
-          const input = TextFormInput.pure();
+          final input = TextFormInput.pure();
           expect(input.isPure, isTrue);
           expect(input.inputValue, equals(''));
         });
 
         test("should create in 'pure' state with specified value", () {
-          const input = TextFormInput.pure('10');
+          final input = TextFormInput.pure('10');
           expect(input.isPure, isTrue);
           expect(input.inputValue, equals('10'));
         });
@@ -20,13 +20,13 @@ void main() {
 
       group('dirty', () {
         test("should create in 'impure' state with default value", () {
-          const input = TextFormInput.dirty();
+          final input = TextFormInput.dirty();
           expect(input.isPure, isFalse);
           expect(input.inputValue, equals(''));
         });
 
         test("should create in 'impure' state with specified value", () {
-          const input = TextFormInput.dirty('10');
+          final input = TextFormInput.dirty('10');
           expect(input.isPure, isFalse);
           expect(input.inputValue, equals('10'));
         });
@@ -35,7 +35,7 @@ void main() {
 
     group('validators', () {
       test('should be empty', () {
-        const pure = TextFormInput.pure();
+        final pure = TextFormInput.pure();
         expect(pure.validators, isEmpty);
       });
     });
@@ -45,13 +45,13 @@ void main() {
     group('constructors', () {
       group('pure', () {
         test("should create in 'pure' state with default value", () {
-          const input = RequiredTextFormInput.pure();
+          final input = RequiredTextFormInput.pure();
           expect(input.isPure, isTrue);
           expect(input.inputValue, equals(''));
         });
 
         test("should create in 'pure' state with specified value", () {
-          const input = RequiredTextFormInput.pure('10');
+          final input = RequiredTextFormInput.pure('10');
           expect(input.isPure, isTrue);
           expect(input.inputValue, equals('10'));
         });
@@ -59,13 +59,13 @@ void main() {
 
       group('dirty', () {
         test("should create in 'impure' state with default value", () {
-          const input = RequiredTextFormInput.dirty();
+          final input = RequiredTextFormInput.dirty();
           expect(input.isPure, isFalse);
           expect(input.inputValue, equals(''));
         });
 
         test("should create in 'impure' state with specified value", () {
-          const input = RequiredTextFormInput.dirty('10');
+          final input = RequiredTextFormInput.dirty('10');
           expect(input.isPure, isFalse);
           expect(input.inputValue, equals('10'));
         });
@@ -74,7 +74,7 @@ void main() {
 
     group('validators', () {
       test('should include Required', () {
-        const input = RequiredDoubleFormInput.pure();
+        final input = RequiredDoubleFormInput.pure();
         expect(
           input.validators,
           contains(Validators.required),

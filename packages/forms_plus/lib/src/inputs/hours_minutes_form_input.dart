@@ -1,4 +1,4 @@
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 /// {@template hours_minutes_form_input}
 /// A base implementation of [BaseFormInput] for text fields using the format
@@ -6,8 +6,9 @@ import 'package:forms_plus/forms_plus.dart';
 /// {@endtemplate}
 class HoursMinutesFormInput extends FormInput<String, Duration> {
   /// {@macro hours_minutes_form_input}
-  const HoursMinutesFormInput.pure([super.value = ''])
+  HoursMinutesFormInput.pure([super.value = ''])
       : super.pure(
+          sanitizer: Sanitizers.string,
           converter: const HoursMinutesConverter(),
           validators: const [
             Validators.required,
@@ -16,8 +17,9 @@ class HoursMinutesFormInput extends FormInput<String, Duration> {
         );
 
   /// {@macro text_form_input}
-  const HoursMinutesFormInput.dirty([super.value = ''])
+  HoursMinutesFormInput.dirty([super.value = ''])
       : super.dirty(
+          sanitizer: Sanitizers.string,
           converter: const HoursMinutesConverter(),
           validators: const [
             Validators.required,

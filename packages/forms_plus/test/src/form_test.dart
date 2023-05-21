@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 class TestForm extends Form {
   TestForm.pure({

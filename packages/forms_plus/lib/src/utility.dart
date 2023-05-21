@@ -1,4 +1,4 @@
-import 'package:forms_plus/src/validators/validator.dart';
+import 'package:form_inputs/src/validators/validator.dart';
 
 /// Iterable extension methods
 extension IterableX<I, O, E extends ValidationError>

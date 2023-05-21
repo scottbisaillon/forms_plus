@@ -1,4 +1,4 @@
-import 'package:forms_plus/src/validators/validator.dart';
+import 'package:form_inputs/src/validators/validator.dart';
 
 /// {@template positive_validator}
 /// [Validator] that requires the input to be positive.

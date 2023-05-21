@@ -1,4 +1,4 @@
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 /// {@template optional}
 /// [Validator] that will skip validation if input is empty.

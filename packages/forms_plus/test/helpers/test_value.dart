@@ -5,5 +5,5 @@ class TestValue<I, O> {
   final O output;
 
   @override
-  String toString() => "'${input.toString()}'";
+  String toString() => "'$input'";
 }

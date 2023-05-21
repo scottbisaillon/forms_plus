@@ -1,4 +1,4 @@
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 /// An implementation of [FormInput] using a [String] as the input type and
 /// [double] as the output type.
@@ -8,8 +8,9 @@ class DoubleFormInput extends FormInput<String, double> {
   /// {@template double_form_input_pure}
   /// Creates a [DoubleFormInput] in a 'pure' state.
   /// {@endtemplate}
-  const DoubleFormInput.pure([super.value = ''])
+  DoubleFormInput.pure([super.value = ''])
       : super.pure(
+          sanitizer: Sanitizers.string,
           converter: const DoubleConverter(),
           validators: const [Validators.double],
         );
@@ -17,8 +18,9 @@ class DoubleFormInput extends FormInput<String, double> {
   /// {@template double_form_input_impure}
   /// Creates a [DoubleFormInput] in an 'impure' state.
   /// {@endtemplate}
-  const DoubleFormInput.dirty([super.value = ''])
+  DoubleFormInput.dirty([super.value = ''])
       : super.dirty(
+          sanitizer: Sanitizers.string,
           converter: const DoubleConverter(),
           validators: const [Validators.double],
         );
@@ -28,10 +30,10 @@ class DoubleFormInput extends FormInput<String, double> {
 /// with the additional [Validators.required] validator.
 class RequiredDoubleFormInput extends DoubleFormInput {
   /// {@macro double_form_input_pure}
-  const RequiredDoubleFormInput.pure([super.value = '']) : super.pure();
+  RequiredDoubleFormInput.pure([super.value = '']) : super.pure();
 
   /// {@macro double_form_input_impure}
-  const RequiredDoubleFormInput.dirty([super.value = '']) : super.dirty();
+  RequiredDoubleFormInput.dirty([super.value = '']) : super.dirty();
 
   @override
   List<Validator<String, ValidationError>> get validators =>

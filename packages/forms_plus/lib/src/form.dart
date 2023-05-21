@@ -1,6 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:equatable/equatable.dart';
-import 'package:forms_plus/src/form_input.dart';
+import 'package:form_inputs/form_inputs.dart';
 import 'package:meta/meta.dart';
 
 /// {@template form}
@@ -12,7 +12,7 @@ abstract class Form extends Equatable {
   const Form();
 
   /// All [BaseFormInput]s of this [Form].
-  List<BaseFormInput> get inputs;
+  List<BaseFormInput<dynamic, dynamic, ValidationError>> get inputs;
 
   /// If all of the [BaseFormInput]s of the this [Form] are `pure`.
   bool get isPure => inputs.every((element) => element.isPure);

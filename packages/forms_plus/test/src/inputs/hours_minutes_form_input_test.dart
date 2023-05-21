@@ -1,18 +1,18 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 void main() {
   group('HoursMinutesFormInput', () {
     group('constructors', () {
       group('pure', () {
         test("should create in 'pure' state with default value", () {
-          const input = HoursMinutesFormInput.pure();
+          final input = HoursMinutesFormInput.pure();
           expect(input.isPure, isTrue);
           expect(input.inputValue, equals(''));
         });
 
         test("should create in 'pure' state with specified value", () {
-          const input = HoursMinutesFormInput.pure('10:10');
+          final input = HoursMinutesFormInput.pure('10:10');
           expect(input.isPure, isTrue);
           expect(input.inputValue, equals('10:10'));
         });
@@ -20,13 +20,13 @@ void main() {
 
       group('dirty', () {
         test("should create in 'impure' state with default value", () {
-          const input = HoursMinutesFormInput.dirty();
+          final input = HoursMinutesFormInput.dirty();
           expect(input.isPure, isFalse);
           expect(input.inputValue, equals(''));
         });
 
         test("should create in 'impure' state with specified value", () {
-          const input = HoursMinutesFormInput.dirty('10:10');
+          final input = HoursMinutesFormInput.dirty('10:10');
           expect(input.isPure, isFalse);
           expect(input.inputValue, equals('10:10'));
         });
@@ -36,11 +36,11 @@ void main() {
     group('validators', () {
       test('should inlude Required and HoursMinutesFormat validators in order',
           () {
-        const input = HoursMinutesFormInput.pure();
+        final input = HoursMinutesFormInput.pure();
         expect(
           input.validators,
           containsAllInOrder(
-            const <Validator>[
+            const <Validator<dynamic, ValidationError>>[
               Validators.required,
               Validators.hoursMinutesFormat
             ],

@@ -1,16 +1,24 @@
-import 'package:forms_plus/forms_plus.dart';
+import 'package:form_inputs/form_inputs.dart';
 
 /// {@template text_form_input}
 /// A base implementation of [BaseFormInput] for simple text fields.
 /// {@endtemplate}
 class TextFormInput extends FormInput<String, String> {
   /// {@macro text_form_input}
-  const TextFormInput.pure([super.value = ''])
-      : super.pure(converter: const StringConverter(), validators: const []);
+  TextFormInput.pure([super.value = ''])
+      : super.pure(
+          sanitizer: Sanitizers.string,
+          converter: const StringConverter(),
+          validators: const [],
+        );
 
   /// {@macro text_form_input}
-  const TextFormInput.dirty([super.value = ''])
-      : super.dirty(converter: const StringConverter(), validators: const []);
+  TextFormInput.dirty([super.value = ''])
+      : super.dirty(
+          sanitizer: Sanitizers.string,
+          converter: const StringConverter(),
+          validators: const [],
+        );
 }
 
 /// {@template required_text_form_input}
@@ -18,10 +26,10 @@ class TextFormInput extends FormInput<String, String> {
 /// {@endtemplate}
 class RequiredTextFormInput extends TextFormInput {
   /// {@macro required_text_form_input}
-  const RequiredTextFormInput.pure([super.value = '']) : super.pure();
+  RequiredTextFormInput.pure([super.value = '']) : super.pure();
 
   /// {@macro required_text_form_input}
-  const RequiredTextFormInput.dirty([super.value = '']) : super.dirty();
+  RequiredTextFormInput.dirty([super.value = '']) : super.dirty();
 
   @override
   List<Validator<String, ValidationError>> get validators =>
