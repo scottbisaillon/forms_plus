@@ -1,6 +1,6 @@
 name: forms_plus
 description: A package for creating extensible type safe forms.
-version: 1.0.0+1
+version: 1.0.0+2
 publish_to: none
 
 environment:
